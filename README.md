@@ -116,7 +116,7 @@ For example, to debug the startup for `upload_turbo.zip` locally, one can run:
 d6ff36c9ec48: Pull complete
 c958d65b3090: Pull complete
 ...
-> docker run -it valohai/bbochallenge:20200821-57e60f9 /bin/bash
+> docker run --network none -it valohai/bbochallenge:20200821-57e60f9 /bin/bash
 root@90d3e94c5156:/# mkdir -p /valohai/inputs/optimizer
 > CONTAINER=90d3e94c5156
 > docker cp ./upload_turbo.zip $CONTAINER:/valohai/inputs/optimizer/upload_turbo.zip
